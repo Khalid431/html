@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html
+  id="root-html"
+  class="website"
+  lang="en"
+  dir="ltr"
+  title="Semantic HTML Website"
+  translate="yes"
+  data-site="demo">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Advanced Global Attributes Demo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      background: #eef2f7;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    header,
+    nav,
+    main,
+    section,
+    article,
+    aside,
+    footer,
+    form {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    img,
+    video {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+
+    input,
+    textarea,
+    select,
+    button,
+    progress,
+    meter {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #444;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
+    .card {
+      border: 2px dashed #444;
+    }
+  </style>
+
+</head>
+
+<body
+  id="body"
+  class="page-body"
+  title="Website Body"
+  tabindex="0"
+  accesskey="b"
+  draggable="false"
+  spellcheck="true"
+  contenteditable="false"
+  translate="yes"
+  data-page="dashboard">
+
+  <!-- HEADER -->
+  <header
+    id="top-header"
+    class="card"
+    title="Header"
+    tabindex="1"
+    accesskey="h"
+    draggable="true"
+    spellcheck="true"
+    translate="yes"
+    data-header="main">
+
+    <h1
+      id="website-title"
+      class="main-heading"
+      title="Website Title"
+      tabindex="2"
+      contenteditable="true"
+      data-heading="primary">
+
+      HTML Global Attributes Playground
+    </h1>
+
+    <p
+      id="header-description"
+      class="description"
+      title="Header Description"
+      tabindex="3"
+      spellcheck="true"
+      contenteditable="true"
+      draggable="true">
+
+      Edit this text and explore global HTML attributes.
+    </p>
+
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav
+    id="navbar"
+    class="card"
+    title="Navigation Bar"
+    tabindex="4"
+    accesskey="n"
+    data-nav="top">
+
+    <ul>
+
+      <li>
+        <a
+          id="nav-home"
+          class="nav-item"
+          href="#"
+          title="Home"
+          tabindex="5"
+          draggable="true"
+          data-link="home">
+
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a
+          id="nav-services"
+          class="nav-item"
+          href="#"
+          title="Services"
+          tabindex="6">
+
+          Services
+        </a>
+      </li>
+
+      <li>
+        <a
+          id="nav-blog"
+          class="nav-item"
+          href="#"
+          title="Blog"
+          tabindex="7">
+
+          Blog
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- MAIN -->
+  <main
+    id="main-area"
+    class="card"
+    title="Main Area"
+    tabindex="8"
+    data-main="true">
+
+    <!-- SECTION -->
+    <section
+      id="services-section"
+      class="content-box"
+      title="Services"
+      tabindex="9"
+      draggable="false"
+      data-section="services">
+
+      <h2>Services</h2>
+
+      <!-- ARTICLE -->
+      <article
+        id="web-dev-article"
+        class="article-card"
+        title="Web Development"
+        tabindex="10"
+        draggable="true"
+        data-category="development">
+
+        <h3>Frontend Development</h3>
+
+        <p>
+          Frontend developers create interfaces using HTML, CSS, and JavaScript.
+        </p>
+
+        <!-- FIGURE -->
+        <figure
+          id="developer-image-box"
+          class="image-box"
+          title="Developer Figure"
+          tabindex="11">
+
+          <img
+            id="developer-image"
+            class="responsive-img"
+            src="https://via.placeholder.com/300"
+            alt="Developer Image"
+            title="Sample Developer"
+            draggable="false"
+            data-image="developer">
+
+          <figcaption
+            id="developer-caption"
+            class="caption"
+            title="Developer Caption">
+
+            Example frontend developer workspace.
+          </figcaption>
+
+        </figure>
+
+      </article>
+
+    </section>
+
+    <!-- FORM -->
+    <section
+      id="feedback-section"
+      class="content-box"
+      title="Feedback Form">
+
+      <h2>Feedback Form</h2>
+
+      <form
+        id="feedback-form"
+        class="form-card"
+        title="User Feedback Form"
+        autocomplete="on">
+
+        <label for="username">Username</label>
+
+        <input
+          type="text"
+          id="username"
+          class="input-field"
+          title="Username Field"
+          placeholder="Enter username"
+          tabindex="12"
+          spellcheck="false"
+          data-input="username">
+
+        <label for="bio">Bio</label>
+
+        <textarea
+          id="bio"
+          class="textarea-field"
+          title="Biography Field"
+          rows="4"
+          tabindex="13"
+          contenteditable="true"
+          spellcheck="true"></textarea>
+
+        <label for="experience">Experience Level</label>
+
+        <select
+          id="experience"
+          class="dropdown"
+          title="Experience Selector"
+          tabindex="14">
+
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+
+        </select>
+
+        <label for="progress">Course Progress</label>
+
+        <progress
+          id="progress"
+          class="progress-bar"
+          value="70"
+          max="100"
+          title="Learning Progress">
+
+        </progress>
+
+        <label for="skill-meter">Skill Meter</label>
+
+        <meter
+          id="skill-meter"
+          class="meter"
+          min="0"
+          max="100"
+          value="85"
+          title="Skill Level">
+
+        </meter>
+
+        <button
+          type="submit"
+          id="send-btn"
+          class="submit-button"
+          title="Submit Button"
+          tabindex="15"
+          accesskey="s">
+
+          Send Feedback
+        </button>
+
+      </form>
+
+    </section>
+
+    <!-- TABLE -->
+    <section
+      id="team-section"
+      class="content-box"
+      title="Team Members">
+
+      <h2>Development Team</h2>
+
+      <table
+        id="team-table"
+        class="team-table"
+        title="Team Table"
+        tabindex="16">
+
+        <thead>
+
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Emma</td>
+            <td>UI Designer</td>
+          </tr>
+
+          <tr>
+            <td>Lucas</td>
+            <td>Backend Engineer</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+    <!-- DESCRIPTION LIST -->
+    <section
+      id="definitions-section"
+      class="content-box"
+      title="Definitions">
+
+      <h2>Computer Science Terms</h2>
+
+      <dl
+        id="definitions-list"
+        class="definition-list">
+
+        <dt title="Application Programming Interface">API</dt>
+        <dd>Allows applications to communicate with each other.</dd>
+
+        <dt title="Document Object Model">DOM</dt>
+        <dd>Represents HTML documents as objects.</dd>
+
+        <dt title="Responsive Design">Responsive Design</dt>
+        <dd>Design approach for multiple screen sizes.</dd>
+
+      </dl>
+
+    </section>
+
+    <!-- MEDIA -->
+    <section
+      id="media-section"
+      class="content-box"
+      title="Media Content">
+
+      <h2>Video Example</h2>
+
+      <video
+        id="sample-video"
+        class="video-player"
+        controls
+        title="Sample Video"
+        tabindex="17">
+
+        <source
+          src="sample.mp4"
+          type="video/mp4">
+
+      </video>
+
+    </section>
+
+  </main>
+
+  <!-- ASIDE -->
+  <aside
+    id="sidebar"
+    class="card"
+    title="Sidebar"
+    tabindex="18"
+    data-sidebar="extra">
+
+    <h2>Resources</h2>
+
+    <details
+      id="resource-details"
+      class="details-box"
+      title="Additional Resources">
+
+      <summary
+        id="resource-summary"
+        class="summary-title"
+        title="Summary">
+
+        Open Resources
+      </summary>
+
+      <ul>
+
+        <li>HTML Documentation</li>
+        <li>CSS Tutorials</li>
+        <li>JavaScript Guides</li>
+
+      </ul>
+
+    </details>
+
+  </aside>
+
+  <!-- FOOTER -->
+  <footer
+    id="footer"
+    class="card"
+    title="Website Footer"
+    tabindex="19"
+    accesskey="f"
+    data-footer="bottom">
+
+    <p
+      id="footer-text"
+      class="footer-paragraph"
+      title="Footer Text">
+
+      &copy; 2026 Web Development Demo
+    </p>
+
+    <address
+      id="contact-address"
+      class="contact-info"
+      title="Contact Address">
+
+      support@example.com
+    </address>
+
+  </footer>
+
+</body>
+
+</html>
